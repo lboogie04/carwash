@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+/*  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+ text-align: center;
+}
+
+.form-container {
+  padding-left: 25%;
+  padding-right: 25%;
+}

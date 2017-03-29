@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 What Can We Do for You Today?
+  form(action='/submit', method='post').form-container
+    div.form-group
+      label What kind of Vehicle is it?
+      select(onchange='selectCheck(this)', name='vehicle').form-control#getType
+        option Car
+        option Truck
+      - var isTruck = true 
+      if isTruck
+        label Does your truck have mud?
+        select(name='mud').form-control
+          option Yes
+          option No
+      else
+        ''
+      label First Time with us?
+      select(name='firstTime').form-control
+        option Yes
+        option No
+      label Enter your license plate
+      input(type='text', placeholder='License plate number', name='license').form-control
+      button(type='submit').btn.btn-primary Give me a Price
+      
+
+  p Welcome to #{title}
